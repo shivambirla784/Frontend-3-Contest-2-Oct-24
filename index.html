@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Logo" class="logo">
+            <h1>Your Restaurant Menu</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search food item...">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="nav-links">
+            <button class="signup-btn">Signup</button>
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>WEEKEND SPECIAL</h2>
+            <h1>Delicious Food Menu</h1>
+            <div class="hero-buttons">
+                <button class="order-now" onclick="startOrder()">ORDER NOW</button>
+                <p class="delivery-info">24/7 Home Delivery</p>
+            </div>
+            <p class="contact">323-517-4946</p>
+            <p class="website">www.yourwebsite.com</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2>Menu</h2>
+        <div class="menu-container" id="menu-container">
+            <!-- Menu items will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Order Status Modal -->
+    <div id="status-modal" class="modal">
+        <div class="modal-content">
+            <h2>Order Status</h2>
+            <p id="status-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
